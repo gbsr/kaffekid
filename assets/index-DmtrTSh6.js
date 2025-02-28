@@ -154,7 +154,7 @@ Error generating stack: `+a.message+`
   height: 60px;
   z-index: 20000;
   background: #d8cec1;
-  box-shadow: 0 1px 82px #c7b6a2;
+  box-shadow: 0 10px 82px #c7b6a2;
 `,Xm=xt.div`
   width: 60%;
   margin: 0 auto;
@@ -200,22 +200,22 @@ Error generating stack: `+a.message+`
   margin-bottom: 15px;
   color: #333;
 `,Qm=()=>M.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round",children:[M.jsx("rect",{x:"2",y:"2",width:"20",height:"20",rx:"5",ry:"5"}),M.jsx("path",{d:"M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"}),M.jsx("line",{x1:"17.5",y1:"6.5",x2:"17.51",y2:"6.5"})]}),Zm=xt.a`
-  z-index: 1000000;
+  z-index: 100000;
   border-radius: 50%;
   top: 28px;
   left: 28px;
   height: 40px;
   width: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid #3a3630;
   position: fixed;
   right: 15%;
   cursor: pointer;
-  background-color: #e5e1d9;
+  background-color: #d7ccbd;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #333;
+  color: #3a3630;
   transition: all 0.3s ease;
 
   &:hover {
