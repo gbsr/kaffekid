@@ -203,7 +203,6 @@ const BlurbContainer = styled.div`
 
   @media (max-width: 1024px) {
     width: 100%;
-    padding: 4px;
   }
 `
 const Blurb = styled.p`
