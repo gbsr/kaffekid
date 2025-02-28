@@ -172,7 +172,7 @@ const TopBar = styled.div`
 `
 
 const BlurbContainer = styled.div`
-  width: 0%;
+  width: 100%;
   margin: 0 auto;
   background: #c7b6a2;
   border: 1px solid #b6a795;
@@ -392,8 +392,7 @@ const Spacer = styled.div`
 const MainContainer = styled.div`
   min-height: 100vh;
   width: 100%;
-  max-width: 100vw; /* Prevent overflow */
-  margin: 0 auto;
+  max-width: 100vw;
   padding: 40px 20px;
   box-sizing: border-box;
   overflow-x: hidden;
