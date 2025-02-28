@@ -156,7 +156,7 @@ Error generating stack: `+a.message+`
   background: #d8cec1;
   box-shadow: 0 10px 82px #c7b6a2;
 `,Gm=At.div`
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   background: #c7b6a2;
   border: 1px solid #b6a795;
