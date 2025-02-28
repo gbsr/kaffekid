@@ -163,7 +163,7 @@ const TopBar = styled.div`
   height: 60px;
   z-index: 20000;
   background: #d8cec1;
-  box-shadow: 0 1px 82px #c7b6a2;
+  box-shadow: 0 10px 82px #c7b6a2;
 `
 
 const BlurbContainer = styled.div`
@@ -232,22 +232,22 @@ const InstagramIcon = () => (
 )
 
 const InstagramButton = styled.a`
-  z-index: 1000000;
+  z-index: 100000;
   border-radius: 50%;
   top: 28px;
   left: 28px;
   height: 40px;
   width: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid #3a3630;
   position: fixed;
   right: 15%;
   cursor: pointer;
-  background-color: #e5e1d9;
+  background-color: #d7ccbd;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #333;
+  color: #3a3630;
   transition: all 0.3s ease;
 
   &:hover {
