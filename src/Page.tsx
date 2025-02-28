@@ -43,13 +43,14 @@ const Page = () => {
 
   return (
     <MainContainer>
+      <div ref={gridRef} style={{ position: 'absolute', top: 0 }}></div>
       <TopBar>
         <Title>Jozye Kaya Art</Title>
         <Spacer />
       </TopBar>
 
       <ItemContainer>
-        <GridContainer ref={gridRef}>
+        <GridContainer>
           <BlurbContainer>
             <Blurb>
               <span>
@@ -171,7 +172,7 @@ const TopBar = styled.div`
 `
 
 const BlurbContainer = styled.div`
-  width: 70%;
+  width: 0%;
   margin: 0 auto;
   background: #c7b6a2;
   border: 1px solid #b6a795;
