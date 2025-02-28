@@ -53,15 +53,15 @@ const Page = () => {
           <BlurbContainer>
             <Blurb>
               <span>
-                Jozye Kaya skapar expressionistiska, abstrakta konstverk,
-                inspirerat av naturen. Färgerna hon använder är en blandning av
-                natur pigment, oljepastell och akryl. Hon använder konsten som
-                meditation och alla verk är skapade direkt från hjärtat.{' '}
+                Jozye Kaya creates expressionist, abstract artworks inspired by
+                nature. The colors she uses are a mix of natural pigments, oil
+                pastels, and acrylics. She uses art as meditation, and all works
+                are created directly from the heart.
               </span>
               <br></br>
-              <br></br> Hon använder hela kroppen när hon målar, och målar
-              främst med händerna, på golvet. Hon har tidigare ställt ut i
-              Milano, Köpenhamn och på olika ställen runt Sverige.
+              <br></br> She uses her entire body when painting, primarily
+              painting with her hands on the floor. She has previously exhibited
+              in Milan, Copenhagen, and various places around Sweden.
             </Blurb>
           </BlurbContainer>
           <ImageContainer>
