@@ -47,8 +47,22 @@ const Page = () => {
         <Title>Jozye Kaya Art</Title>
         <Spacer />
       </TopBar>
+
       <ItemContainer>
         <GridContainer ref={gridRef}>
+          <BlurbContainer>
+            <Blurb>
+              Jozye Kaya skapar expressionistiska, abstrakta konstverk,
+              inspirerat av naturen. Färgerna hon använder är en blandning av
+              natur pigment, oljepastell och akryl.{' '}
+            </Blurb>
+            <Blurb>
+              Hon använder konsten som meditation och alla verk är skapade
+              direkt från hjärtat. Hon använder hela kroppen när hon målar, och
+              målar främst med händerna, på golvet. Hon har tidigare ställt ut i
+              Milano, Köpenhamn och på olika ställen runt Sverige.
+            </Blurb>
+          </BlurbContainer>
           <ImageContainer>
             <img src="./IMG_5995.jpg" alt="artwork" />
             <ImageFooter>
@@ -122,13 +136,11 @@ const Page = () => {
           </ImageContainer>
         </GridContainer>
       </ItemContainer>
+      <BackButton onClick={handleBackClick}>← Back to Gallery</BackButton>
 
       <FormTitle id="contact" ref={contactRef}>
         Let's talk
       </FormTitle>
-      {showingContact && (
-        <BackButton onClick={handleBackClick}>← Back to Gallery</BackButton>
-      )}
       <EmailForm />
       <FormTitle></FormTitle>
       <InstagramButton
@@ -146,10 +158,59 @@ const Page = () => {
 const TopBar = styled.div`
   position: fixed;
   top: 0px;
+  left: 0px;
   width: 100%;
   height: 60px;
   z-index: 20000;
-  background: #e5e1d9;
+  background: #d8cec1;
+  box-shadow: 0 1px 82px #c7b6a2;
+`
+
+const BlurbContainer = styled.div`
+  width: 60%;
+  margin: 0 auto;
+  background: #c7b6a2;
+  border: 1px solid #b6a795;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 60px;
+  box-shadow: 0 4px 12px #c7b6a2;
+
+  &:before {
+    content: '\\201C'; /* Opening quotation mark */
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+  }
+
+  &:after {
+    content: '\\201D'; /* Closing quotation mark */
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    transform: rotate(180deg);
+  }
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    padding: 4px;
+  }
+`
+const Blurb = styled.p`
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: ${colors.mainText};
+  padding-inline: 20px;
+  padding-top: 32px;
+  margin-bottom: 15px;
+  color: #333;
 `
 
 const InstagramIcon = () => (
@@ -204,18 +265,20 @@ const InstagramButton = styled.a`
 const BackButton = styled.button`
   background-color: #a87979;
   color: white;
-  border: 1px solid ${colors.borderDark};
   padding: 8px 16px;
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
-  margin: 0 auto 20px;
+  margin: 40px auto 20px;
   display: block;
+  box-shadow: 0 10px 20px ${colors.shadow};
+  border: 1px solid #c7b6a2;
+
   font-family: 'Lato', sans-serif;
   transition: all 0.2s ease;
 
   &:hover {
-    background-color: ${colors.borderLight};
+    background-color: #c27d7d;
     transform: translateY(-2px);
   }
 
@@ -242,9 +305,9 @@ const ImageContainer = styled.div`
   margin: 0 auto;
   flex-direction: column;
   border-radius: 8px;
-  border: 1px solid ${colors.borderLight};
+  border: 1px solid #c7b6a2;
   background-color: white;
-  box-shadow: 0 4px 12px ${colors.shadow};
+  box-shadow: 0 4px 12px #c7b6a2;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
@@ -300,6 +363,9 @@ const InquireButton = styled.a`
   padding: 12px 0;
   margin-top: 15px;
   border-radius: 4px;
+  border: 1px solid #c7b6a2;
+  box-shadow: 0 10px 20px ${colors.shadow};
+
   font-size: 14px;
   text-decoration: none;
   font-weight: 600;
@@ -312,13 +378,11 @@ const InquireButton = styled.a`
 
 const Spacer = styled.div`
   position: absolute;
-  left: 74px;
-  top: 40px;
-  width: 85%;
+  left: 92px;
+  top: 58px;
+  width: 90%;
   height: 1px;
-  background-color: ${colors.borderDark};
-  margin: 20px auto 40px;
-  box-shadow: 0 2px 4px ${colors.shadow};
+  background: #000;
 `
 
 const MainContainer = styled.div`
@@ -338,7 +402,7 @@ const GridContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
-  margin-top: 40px;
+  margin-top: 80px;
   width: 100%;
 
   @media (min-width: 768px) {
@@ -368,12 +432,13 @@ const Title = styled.h1`
 `
 
 const FormTitle = styled.h2`
-  margin-top: 80px;
+  margin-top: 20px;
+
   font-family: 'Playfair Display', serif;
   font-size: 28px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: ${colors.mainText};
 `
 

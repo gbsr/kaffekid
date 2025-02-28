@@ -30,7 +30,6 @@ const EmailForm = () => {
 
   return (
     <FormContainer>
-      <FormTitle>Talk to me</FormTitle>
       <Form onSubmit={onSubmit}>
         <FormGroup>
           <Label htmlFor="name">Name</Label>
@@ -112,6 +111,7 @@ const Label = styled.label`
   color: ${colors.mainText};
 `
 
+// Update Input to use the same font as other text elements
 const Input = styled.input`
   border: 1px solid ${colors.borderLight};
   border-radius: 4px;
@@ -119,20 +119,28 @@ const Input = styled.input`
   padding: 12px;
   transition: border-color 0.3s;
   background-color: white;
+  font-family: 'Playfair Display', serif;
 
   &:focus {
     outline: none;
     border-color: ${colors.accent};
   }
+
+  &::placeholder {
+    color: #a9988a;
+    font-style: italic;
+    opacity: 0.7;
+  }
 `
 
+// Update Textarea to use the same font
 const Textarea = styled.textarea`
   border: 1px solid ${colors.borderLight};
   border-radius: 4px;
   font-size: 16px;
   padding: 12px;
   transition: border-color 0.3s;
-  font-family: inherit;
+  font-family: 'Playfair Display', serif;
   resize: vertical;
   background-color: white;
   min-height: 120px;
@@ -141,11 +149,17 @@ const Textarea = styled.textarea`
     outline: none;
     border-color: ${colors.accent};
   }
+
+  &::placeholder {
+    color: #a9988a;
+    font-style: italic;
+    opacity: 0.7;
+  }
 `
 
+// Update Button to use the same font
 const Button = styled.button`
   background-color: ${colors.accent};
-  border: none;
   border-radius: 4px;
   color: white;
   cursor: pointer;
@@ -153,6 +167,9 @@ const Button = styled.button`
   font-weight: 600;
   padding: 14px 20px;
   margin-top: 10px;
+  border: 1px solid #928578;
+  font-family: 'Playfair Display', serif;
+  box-shadow: 0 10px 20px ${colors.shadow};
   transition: background-color 0.3s;
 
   &:hover {
@@ -164,12 +181,14 @@ const Button = styled.button`
   }
 `
 
+// Update ResultMessage to use the same font
 const ResultMessage = styled.div`
   margin-top: 20px;
   padding: 12px;
   text-align: center;
   border-radius: 4px;
   font-weight: 500;
+  font-family: 'Playfair Display', serif;
   background-color: ${(props) =>
     String(props.children)?.includes('Successfully')
       ? 'rgba(76, 175, 80, 0.1)'
@@ -183,5 +202,4 @@ const ResultMessage = styled.div`
       ? '#0d47a1'
       : '#c62828'};
 `
-
 export default EmailForm
