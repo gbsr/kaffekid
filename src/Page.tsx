@@ -67,7 +67,7 @@ const Page = () => {
           <ImageContainer>
             <img src="./IMG_5995.jpg" alt="artwork" />
             <ImageFooter>
-              <Price>$Tell me yo prajs</Price>
+              <Price>100cm x 80cm - 9200:-</Price>
               <InquireButton href="#contact">Inquire</InquireButton>
             </ImageFooter>
           </ImageContainer>
@@ -75,7 +75,7 @@ const Page = () => {
           <ImageContainer>
             <img src="./IMG_7134.jpg" alt="artwork" />
             <ImageFooter>
-              <Price>$Tell me yo prajs</Price>
+              <Price>30cm x 30cm - 2800:-</Price>
               <InquireButton href="#contact">Inquire</InquireButton>
             </ImageFooter>
           </ImageContainer>
@@ -83,7 +83,7 @@ const Page = () => {
           <ImageContainer>
             <img src="./IMG_7135.jpg" alt="artwork" />
             <ImageFooter>
-              <Price>$Tell me yo prajs</Price>
+              <Price>65cm x 90cm - 9600:- </Price>
               <InquireButton href="#contact">Inquire</InquireButton>
             </ImageFooter>
           </ImageContainer>
@@ -91,7 +91,7 @@ const Page = () => {
           <ImageContainer>
             <img src="./IMG_7137.jpg" alt="artwork" />
             <ImageFooter>
-              <Price>$Tell me yo prajs</Price>
+              <Price>30cm x 30cm - 2800:-</Price>
               <InquireButton href="#contact">Inquire</InquireButton>
             </ImageFooter>
           </ImageContainer>
@@ -99,7 +99,7 @@ const Page = () => {
           <ImageContainer>
             <img src="./IMG_7138.jpg" alt="artwork" />
             <ImageFooter>
-              <Price>$Tell me yo prajs</Price>
+              <Price>30cm x 30cm - 2800:-</Price>
               <InquireButton href="#contact">Inquire</InquireButton>
             </ImageFooter>
           </ImageContainer>
@@ -107,7 +107,7 @@ const Page = () => {
           <ImageContainer>
             <img src="./IMG_7140.jpg" alt="artwork" />
             <ImageFooter>
-              <Price>$Tell me yo prajs</Price>
+              <Price>91cm x 73cm - 8600:-</Price>
               <InquireButton href="#contact">Inquire</InquireButton>
             </ImageFooter>
           </ImageContainer>
@@ -115,7 +115,7 @@ const Page = () => {
           <ImageContainer>
             <img src="./IMG_7146.jpg" alt="artwork" />
             <ImageFooter>
-              <Price>$Tell me yo prajs</Price>
+              <Price>80cm x 80cm - 8600:-</Price>
               <InquireButton href="#contact">Inquire</InquireButton>
             </ImageFooter>
           </ImageContainer>
@@ -123,7 +123,7 @@ const Page = () => {
           <ImageContainer>
             <img src="./IMG_7147.jpg" alt="artwork" />
             <ImageFooter>
-              <Price>$Tell me yo prajs</Price>
+              <Price>91cm x 73cm - 8600:-</Price>
               <InquireButton href="#contact">Inquire</InquireButton>
             </ImageFooter>
           </ImageContainer>
@@ -131,7 +131,7 @@ const Page = () => {
           <ImageContainer>
             <img src="./IMG_5673.jpg" alt="artwork" />
             <ImageFooter>
-              <Price>$Tell me yo prajs</Price>
+              <Price>24cm x 24cm - 1800:-</Price>
               <InquireButton href="#contact">Inquire</InquireButton>
             </ImageFooter>
           </ImageContainer>
