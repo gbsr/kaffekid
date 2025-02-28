@@ -43,8 +43,10 @@ const Page = () => {
 
   return (
     <MainContainer>
-      <Title>Jozye Kaya Art</Title>
-      <Spacer />
+      <TopBar>
+        <Title>Jozye Kaya Art</Title>
+        <Spacer />
+      </TopBar>
       <ItemContainer>
         <GridContainer ref={gridRef}>
           <ImageContainer>
@@ -141,6 +143,15 @@ const Page = () => {
   )
 }
 
+const TopBar = styled.div`
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 60px;
+  z-index: 20000;
+  background: #e5e1d9;
+`
+
 const InstagramIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -160,14 +171,15 @@ const InstagramIcon = () => (
 )
 
 const InstagramButton = styled.a`
+  z-index: 1000000;
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  top: 28px;
+  left: 28px;
+  height: 40px;
+  width: 40px;
   border: 1px solid rgba(0, 0, 0, 0.5);
   position: fixed;
-  bottom: 30px;
   right: 15%;
-  z-index: 1000;
   cursor: pointer;
   background-color: #e5e1d9;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -299,7 +311,10 @@ const InquireButton = styled.a`
 `
 
 const Spacer = styled.div`
-  width: 96%;
+  position: absolute;
+  left: 74px;
+  top: 40px;
+  width: 85%;
   height: 1px;
   background-color: ${colors.borderDark};
   margin: 20px auto 40px;
@@ -341,6 +356,9 @@ const GridContainer = styled.div`
 
 const Title = styled.h1`
   font-family: 'Playfair Display', serif;
+  position: fixed;
+  top: 20px;
+  left: 80px;
   font-size: 36px;
   font-weight: 700;
   text-align: center;
