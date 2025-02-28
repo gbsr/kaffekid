@@ -156,7 +156,7 @@ Error generating stack: `+a.message+`
   background: #d8cec1;
   box-shadow: 0 10px 82px #c7b6a2;
 `,Gm=At.div`
-  width: 0%;
+  width: 100%;
   margin: 0 auto;
   background: #c7b6a2;
   border: 1px solid #b6a795;
@@ -337,8 +337,7 @@ Error generating stack: `+a.message+`
 `,Km=At.div`
   min-height: 100vh;
   width: 100%;
-  max-width: 100vw; /* Prevent overflow */
-  margin: 0 auto;
+  max-width: 100vw;
   padding: 40px 20px;
   box-sizing: border-box;
   overflow-x: hidden;
