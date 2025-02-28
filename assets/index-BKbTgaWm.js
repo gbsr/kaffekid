@@ -188,7 +188,6 @@ Error generating stack: `+a.message+`
 
   @media (max-width: 1024px) {
     width: 100%;
-    padding: 4px;
   }
 `,Xm=At.p`
   font-family: 'Playfair Display', serif;
