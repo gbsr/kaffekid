@@ -172,7 +172,7 @@ const TopBar = styled.div`
 `
 
 const BlurbContainer = styled.div`
-  width: 100%;
+  width: 70%;
   margin: 0 auto;
   background: #c7b6a2;
   border: 1px solid #b6a795;
