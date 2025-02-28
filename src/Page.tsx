@@ -52,14 +52,15 @@ const Page = () => {
         <GridContainer ref={gridRef}>
           <BlurbContainer>
             <Blurb>
-              Jozye Kaya skapar expressionistiska, abstrakta konstverk,
-              inspirerat av naturen. Färgerna hon använder är en blandning av
-              natur pigment, oljepastell och akryl.{' '}
-            </Blurb>
-            <Blurb>
-              Hon använder konsten som meditation och alla verk är skapade
-              direkt från hjärtat. Hon använder hela kroppen när hon målar, och
-              målar främst med händerna, på golvet. Hon har tidigare ställt ut i
+              <span>
+                Jozye Kaya skapar expressionistiska, abstrakta konstverk,
+                inspirerat av naturen. Färgerna hon använder är en blandning av
+                natur pigment, oljepastell och akryl. Hon använder konsten som
+                meditation och alla verk är skapade direkt från hjärtat.{' '}
+              </span>
+              <br></br>
+              <br></br> Hon använder hela kroppen när hon målar, och målar
+              främst med händerna, på golvet. Hon har tidigare ställt ut i
               Milano, Köpenhamn och på olika ställen runt Sverige.
             </Blurb>
           </BlurbContainer>
