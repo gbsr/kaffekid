@@ -152,6 +152,9 @@ const Page = () => {
       >
         <InstagramIcon />
       </InstagramButton>
+      <Footer>
+        Created with ❤️ by <Link href="https://github.com/gbsr">@gbsr</Link>
+      </Footer>
     </MainContainer>
   )
 }
@@ -440,6 +443,20 @@ const FormTitle = styled.h2`
   font-weight: 700;
   text-align: center;
   margin-bottom: 20px;
+  color: ${colors.mainText};
+`
+
+const Link = styled.a`
+  color: #a87979;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+`
+
+const Footer = styled.footer`
+  position: sticky;
+  text-align: center;
   color: ${colors.mainText};
 `
 
